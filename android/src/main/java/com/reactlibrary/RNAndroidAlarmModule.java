@@ -19,4 +19,5 @@ public class RNAndroidAlarmModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNAndroidAlarm";
   }
+
 }

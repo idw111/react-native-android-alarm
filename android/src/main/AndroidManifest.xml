@@ -1,6 +1,17 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.reactlibrary">
-
+    <application>
+        <receiver android:name=".alarm.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.reactlibrary.alarm.AlarmReceiver.ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".alarm.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
 </manifest>
   
